@@ -1,0 +1,133 @@
+/*Selectores css
+
+selector {
+    propiedad: valor;
+}
+
+1. Etiquetas
+p {
+    color: red;
+}
+
+2. Clase
+.mi-clase {
+    color: blue;
+}
+
+3. id
+#mi-id {
+    color: yellow;
+}
+*/
+
+/*Position:
+static (default)
+relative
+absolute
+fixed
+sticky
+Y propiedad z-index
+*/
+
+/*
+Unidades:
+px, %, vh y vw (porcentajes del tamaño del viewport)
+La pantalla tiene 100vh de altura y 100vw de ancho
+*/
+
+
+html, div, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.padre {
+    background-color: blanchedalmond;
+    position: relative;
+    z-index: -2;
+}
+
+.hijo {
+    width: 25vw;
+    height: 50vh;
+    padding: 12px;
+    /*display: inline-block; */  
+}
+
+#div1 {
+    background-color: greenyellow;
+}
+
+#div2 {
+    background-color: blue;
+}
+
+#div3 {
+    background-color: yellow;
+    position: relative;
+    left: 150px;
+    top: 250px;
+    z-index: -1;
+}
+
+#div4 {
+    background-color: pink;
+}
+
+#div5 {
+    background-color: cyan;
+}
+
+#div6 {
+    background-color: magenta;
+    
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    
+}
+
+#div7 {
+    background-color: oldlace;
+}
+
+#div8 {
+    background-color: brown;
+    position: fixed;
+    left: 37.5vw;
+    top: 25vh;
+}
+
+#div9 {
+    background-color: orange;
+    position: sticky;
+    left: 500px;
+    top: 200px; 
+    z-index:4;   
+}
+
+#div10 {
+    background-color: gray;
+}
+
+#div11 {
+    background-color: blueviolet;
+}
+
+#div12 {
+    background-color: yellow;
+}
+
+#div13 {
+    background-color: crimson;
+}
+
+

@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    color:red;
+    background-color: aquamarine;
+    font-size: 45px;
+    position: fixed;
+    left: 200px;
+    top:0px;
+}
+
+h3 {
+    color: yellow;
+}
+
+h2, h3, p {
+    margin: 50px;
+}
+
+#oceanico {
+    color: green;
+}
+
+.especiales {
+    color: cyan;
+}
+
+section p {
+    text-align: justify;
+}
+
+footer p {
+    background-color: beige;
+    color: brown;
+}
