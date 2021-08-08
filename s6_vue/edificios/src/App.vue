@@ -1,26 +1,25 @@
 <template>
   <div id="app">
     <menubar />
-    <!--
-    <img src="./assets/logo.png">
-    <HelloWorld/>
-    -->    
+    <nuevoedificio v-on:anexar="agregarEdificio" />
     <edificio v-for="k in edificios" :nombre="k.nombre" :pais="k.pais" :ano="k.ano" :altura="k.altura" :descripcion="k.descripcion" :srcImagen="k.srcImagen" :altImagen="k.altImagen" :key="k" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import nuevoedificio from './components/nuevoedificio'
 import edificio from './components/edificio'
 import menubar from './components/menubar'
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld,
+    nuevoedificio,
     edificio,
     menubar
   },
+
   data: function() {
     return {
       edificios: [
@@ -54,6 +53,12 @@ export default {
                   
       ]
     }
+  },
+
+  methods: {
+    agregarEdificio: function(edif) {
+      this.edificios.push(edif)         
+    }
   }
 }
 
@@ -70,7 +75,7 @@ export default {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+  /*text-align: center;*/
   color: #2c3e50;
 
 }
